@@ -7,18 +7,14 @@ var buscadorTexto = "";
 
 async function getDataforJuguetes() {
 
-    let myHeaders = new Headers({
-        'Access-Control-Allow-Origin': '*',
-    });
-    fetch('https://mindy-render-api.onrender.com/api/products/', {myHeaders}).then(resp => {
-        resp.header('Access-Control-Allow-Origin', "*");
-        resp.header('Access-Control-Allow-Headers', "*");
-
-        console.log(resp)
-        // if (resp.ok) {
-        //     return resp.json();
-        // }
-        // throw new Error('Something went wrong');
+    fetch('https://mindy-render-api.onrender.com/api/products/', {
+        method: 'GET',
+        headers
+    }).then(resp => {
+        if (resp.ok) {
+            return resp.json();
+        }
+        throw new Error('Something went wrong');
     })
         .then(json => {
             arr = json.response.filter(producto => producto.nombre).filter(producto => producto.tipo === "Juguete")
