@@ -1,0 +1,346 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{ 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer{
+    background-color: #402E32;
+    color: #FFE8D3;
+    margin-top: auto;
+    background-size: 100% 100rem;
+
+}
+
+#carouselExampleIndicators{
+    height: 70vh;
+}
+
+.carousel-item img{
+    height: 70vh;
+    object-fit: cover;
+}
+
+
+
+
+
+/*NAHUE */
+
+#carouselExampleIndicators{
+    height: 70vh;
+}
+
+.carousel-item img{
+    height: 70vh;
+    
+    object-fit: cover;
+}
+
+
+/* --------------------------------------------------icon */
+
+
+
+.icon-link{
+    height: 6rem;
+    width: auto;
+    object-fit: contain;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+   z-index: 1;
+}
+.icon-name{
+    font-size: 3vh;
+    /* font-family: 'Indie Flower', cursive; */
+    font-weight: bold;
+}
+
+.icon-box{
+    width: 8rem;
+    height: 8rem;
+
+}
+.mx-3{
+    color: black;
+}
+
+
+
+/* --------------------------------------------buttons */
+
+
+
+.css-button-shadow-border-sliding--rose {
+    min-width: 15vh;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+    /* background: #ff0a78; */
+   z-index: 1;
+  }
+  .css-button-shadow-border-sliding--rose:hover:after {
+    width: 100%;
+    left: 0;
+  }
+  .css-button-shadow-border-sliding--rose:after {
+    border-radius: 5px;
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+    background-color: #FE8E55;
+    right: 0;
+}
+.css-button-shadow-border-sliding--rose:active {
+    top: 2px;
+  }
+
+/* ------------------------------------Header color------------------------------------------- */
+header{
+    background-color: #FFE8D3;
+}
+
+header h1{
+    font-size: 8vh;
+    font-family: 'Indie Flower', cursive;
+    color: rgb(29, 18, 18); text-shadow: rgb(211, 127, 204) 0.1em 0.1em 0.2em
+}
+
+a{
+    text-decoration: none;
+}
+/* ----------------------------------MAS SOBRE NOSOTROS---------------------------------------------------- */
+#masSobreNosotros{
+    background-color: #FFE8D3;
+}
+#masSobreNosotros2{
+    background-color:#FFE8D3;
+
+}
+/* ---------------------------------------------PROBANDO ico abajo------------------------ */
+
+.hovicon.effect-3.sub-b, .hovicon.effect-3.sub-b i {
+    color: rgb(2, 2, 2);
+}
+.hovicon.effect-3.sub-b:hover, .hovicon.effect-3.sub-b:hover i {
+    color: #FE8E55;
+}
+.hovicon.effect-3.sub-b:after {
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+    opacity: 0;
+}
+.hovicon.effect-3.sub-b:hover:after {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}   
+
+/* SOFI  ----------------------- */
+
+.body1{ 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(251, 192, 84);
+
+}
+.containerform{
+    background-color:orange;
+
+}
+
+.huellitasForm{
+    /* background-image: url(https://media.istockphoto.com/vectors/the-earth-dog-a-pattern-of-canine-tracks-of-different-sizes-the-dog-vector-id688564304?k=20&m=688564304&s=170667a&w=0&h=fUt7hmUe6vIjiSG-quvIH8RJmEARjHy_kfe_9B1C93I=); */
+    border-radius: 20px;
+    font-style: oblique;
+    width: 100%;
+
+}
+
+/* .btn-primary{
+    background-color: orange;
+    border: yellow;
+    margin-top: 1rem;
+} */
+textarea{
+    resize: none;
+}
+
+
+.map{
+    border-radius: 30px;
+
+}
+.locacion{
+    padding: 7rem;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+}
+
+
+.visitanos{
+    font-style: oblique;
+    font-weight: bold;
+    /* background-color: orange; */
+    border-radius: 20%;
+    margin-bottom: 1.5rem;
+}
+
+
+
+.carrito-btn{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+a[href="#"]{
+    color:white !important;
+    /* background-color: #402E32; */
+}
+
+li > a[href="#"]{
+    color:white !important;
+    /* background-color: #402E32; */
+}
+
+.css-button-shadow-border-sliding--rose{
+    background-color: #402E32 !important;
+}
+
+
+
+/* FLECHA HACIA ABAJO */
+
+.arrow
+{
+
+  bottom: -2rem;
+  left: 50%;
+  margin-left: 15px;
+  width: 40px;
+  height: 40px;
+
+  /**
+   * Dark Arrow Down
+   */
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI1MTIiIGlkPSJzdmcyIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIiB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzIGlkPSJkZWZzNCIvPjxnIGlkPSJsYXllcjEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTU0MC4zNjIyKSI+PHBhdGggZD0ibSAxMjcuNDA2MjUsNjU3Ljc4MTI1IGMgLTQuOTg1MywwLjA3ODQgLTkuOTEwNzcsMi4xNjMwOCAtMTMuNDM3NSw1LjY4NzUgbCAtNTUsNTUgYyAtMy42MDA1NjUsMy41OTkyNyAtNS42OTY4ODMsOC42NTg5NSAtNS42OTY4ODMsMTMuNzUgMCw1LjA5MTA1IDIuMDk2MzE4LDEwLjE1MDczIDUuNjk2ODgzLDEzLjc1IEwgMjQyLjI1LDkyOS4yNSBjIDMuNTk5MjcsMy42MDA1NiA4LjY1ODk1LDUuNjk2ODggMTMuNzUsNS42OTY4OCA1LjA5MTA1LDAgMTAuMTUwNzMsLTIuMDk2MzIgMTMuNzUsLTUuNjk2ODggTCA0NTMuMDMxMjUsNzQ1Ljk2ODc1IGMgMy42MDA1NiwtMy41OTkyNyA1LjY5Njg4LC04LjY1ODk1IDUuNjk2ODgsLTEzLjc1IDAsLTUuMDkxMDUgLTIuMDk2MzIsLTEwLjE1MDczIC01LjY5Njg4LC0xMy43NSBsIC01NSwtNTUgYyAtMy41OTgxNSwtMy41OTEyNyAtOC42NTA2OCwtNS42ODEyNyAtMTMuNzM0MzgsLTUuNjgxMjcgLTUuMDgzNjksMCAtMTAuMTM2MjIsMi4wOSAtMTMuNzM0MzcsNS42ODEyNyBMIDI1Niw3NzguMDMxMjUgMTQxLjQzNzUsNjYzLjQ2ODc1IGMgLTMuNjY2NzgsLTMuNjY0MjMgLTguODQ4MDEsLTUuNzY0NDIgLTE0LjAzMTI1LC01LjY4NzUgeiIgaWQ9InBhdGgzNzY2LTEiIHN0eWxlPSJmb250LXNpemU6bWVkaXVtO2ZvbnQtc3R5bGU6bm9ybWFsO2ZvbnQtdmFyaWFudDpub3JtYWw7Zm9udC13ZWlnaHQ6bm9ybWFsO2ZvbnQtc3RyZXRjaDpub3JtYWw7dGV4dC1pbmRlbnQ6MDt0ZXh0LWFsaWduOnN0YXJ0O3RleHQtZGVjb3JhdGlvbjpub25lO2xpbmUtaGVpZ2h0Om5vcm1hbDtsZXR0ZXItc3BhY2luZzpub3JtYWw7d29yZC1zcGFjaW5nOm5vcm1hbDt0ZXh0LXRyYW5zZm9ybTpub25lO2RpcmVjdGlvbjpsdHI7YmxvY2stcHJvZ3Jlc3Npb246dGI7d3JpdGluZy1tb2RlOmxyLXRiO3RleHQtYW5jaG9yOnN0YXJ0O2Jhc2VsaW5lLXNoaWZ0OmJhc2VsaW5lO2NvbG9yOiMwMDAwMDA7ZmlsbDojMjIyMjIyO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpub256ZXJvO3N0cm9rZTpub25lO3N0cm9rZS13aWR0aDozOC44ODAwMDEwNzttYXJrZXI6bm9uZTt2aXNpYmlsaXR5OnZpc2libGU7ZGlzcGxheTppbmxpbmU7b3ZlcmZsb3c6dmlzaWJsZTtlbmFibGUtYmFja2dyb3VuZDphY2N1bXVsYXRlO2ZvbnQtZmFtaWx5OlNhbnM7LWlua3NjYXBlLWZvbnQtc3BlY2lmaWNhdGlvbjpTYW5zIi8+PC9nPjwvc3ZnPg==);
+  background-size: contain;
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+
+.ver-productos{
+    transform: translateY(-1.5rem);
+    color:white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: all .5s linear;
+}
+
+.ver-productos:hover{
+    background-color: #402E32;
+    color:#FFE8D3;
+    padding: 0.5rem;
+}
+
+.nav-link{
+    width: 100%;
+    color:#FFE8D3;
+}
+
+.css-button-shadow-border-sliding--rose{
+    color: #FFE8D3 !important;
+}
+
+
+.card{
+    background-color: #fff7f0;
+    color:#402E32;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: none;
+}
+
+.texto{
+    min-height: 23rem;
+}
+
+h5.card-title{
+    text-align: center;
+}
+
+
+.comprar-btn{
+    background-color: #402E32;
+    color:white;
+}
+
+h4.card-title,h5.card-title,p.stock{
+    font-weight: bold;
+}
+
+.body1 a.nav-link:hover{
+    color: white !important;
+}
+
+p.card-text{
+    text-align: justify;
+}
+@media (max-width: 1280px ) {
+    .contenedor-form-map{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .map{
+        height: 30rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #welcome{
+        object-position: 80%;
+    }
+}
