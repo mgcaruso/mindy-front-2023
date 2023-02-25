@@ -4,10 +4,10 @@ var optionSelect = "";
 var buscadorTexto = "";
 
 async function getDataforFarmacia(){
-    fetch('https://apipetshop.herokuapp.com/api/articulos')
+    fetch('https://mindy-django-api.onrender.com/api/products/')
     .then( resp => resp.json())
     .then( json => {
-        arr = json.response.filter( producto => producto.nombre).filter( producto => producto.tipo === "Medicamento")
+        arr = json.filter( producto => producto.nombre).filter( producto => producto.tipo === "Farmacia")
         dataForFarmacia.push(...arr);
         displayCards(dataForFarmacia);
         filters()

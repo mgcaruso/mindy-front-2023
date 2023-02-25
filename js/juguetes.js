@@ -7,17 +7,15 @@ var buscadorTexto = "";
 
 async function getDataforJuguetes() {
 
-    fetch('https://mindy-render-api.onrender.com/api/products/', {
-        method: 'GET',
-        headers
-    }).then(resp => {
+    fetch('https://mindy-django-api.onrender.com/api/products/').then(resp => {
         if (resp.ok) {
             return resp.json();
         }
         throw new Error('Something went wrong');
     })
         .then(json => {
-            arr = json.response.filter(producto => producto.nombre).filter(producto => producto.tipo === "Juguete")
+            console.log(json)
+            arr = json.filter(producto => producto.nombre).filter(producto => producto.tipo === "Juguete")
             dataForJuguetes.push(...arr);
             displayCards(dataForJuguetes)
             filters()
