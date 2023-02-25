@@ -1,5 +1,5 @@
 var enCarrito = [];
-
+console.log(enCarrito)
 function addToCart(id){
     // var carritoStorage = JSON.parse(localStorage.getItem("carrito"));
     if(JSON.parse(localStorage.getItem("carrito"))){

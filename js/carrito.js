@@ -5,18 +5,22 @@ var dataForCarrito = [];
 
 
 async function getDataforCarrito(){
-    fetch('https://apipetshop.herokuapp.com/api/articulos')
+    fetch('https://mindy-django-api.onrender.com/api/products/')
     .then( resp => resp.json())
     .then( json => {
-        arr = json.response.filter( producto => producto.nombre)
+        arr = json.filter( producto => producto.nombre)
         dataForCarrito.push(...arr);
-        
         var template  =""; 
         let templateTotal = "";
         var totalDeCompra = 0;
         if(agregado){
             //imprimir los articulos
-            let result = dataForCarrito.filter( producto => agregado.includes(producto._id) )
+            console.log(dataForCarrito)
+            console.log(agregado)
+            agregado = agregado.map( item => parseInt(item))
+            let result = dataForCarrito.filter( producto => agregado.includes(producto.id) )
+            console.log(result)
+
             result.forEach( enCarrito => {
                 template += `<div class="card mb-3" style="min-width: 540px;" >
                 <div class="g-0 d-flex px-4">
@@ -32,7 +36,7 @@ async function getDataforCarrito(){
                     </div>
                 </div>
             </div>`
-                totalDeCompra += enCarrito.precio;
+                totalDeCompra += parseFloat(enCarrito.precio);
                 templateTotal = `<div class="card mb-3" style="min-width: 540px; background-color:#402E32; color:white">
                 <div class="g-0 d-flex px-4">
                     <div class="col-md-8 d-flex align-items-center w-100">
@@ -40,7 +44,7 @@ async function getDataforCarrito(){
                         <button id="vaciar" class="btn btn-danger carrito-btn">Vaciar carrito</button>
                         <button id="pagar" class="btn btn-success carrito-btn">Pagar</button>
                         <h6 class="card-title mb-0">Total a pagar:</h6>
-                        <h5 class="card-title mb-0">$${totalDeCompra}</h5>
+                        <h5 class="card-title mb-0">$${totalDeCompra.toFixed(2)}</h5>
                         </div>
                     </div>
                 </div>

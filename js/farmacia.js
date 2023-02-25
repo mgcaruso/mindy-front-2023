@@ -32,7 +32,7 @@ function displayCards(arr){
     let template = "";
     arr.forEach( producto => {
 
-        if(enCarrito.includes(producto._id)){
+        if(enCarrito.includes(producto.id.toString())){
             boton = 1;
         }else{
             boton = 2;
@@ -47,7 +47,7 @@ function displayCards(arr){
             <div class="d-flex justify-content-evenly align-items-center">
                 <h4 class="card-title">$${producto.precio}</h4>
                 <div class="comprar">
-                ${ boton === 1 ? `<button id="cart-btn-${producto._id}" onclick="addToCart('${producto._id}')" class="btn btn-success">Añadido <i class="bi bi-cart-check-fill"></i></button>` : `<button id="cart-btn-${producto._id}" onclick="addToCart('${producto._id}')" class="btn comprar-btn">Comprar <i class="bi bi-cart-plus"></i></button>`}
+                ${ boton === 1 ? `<button id="cart-btn-${producto.id}" onclick="addToCart('${producto.id}')" class="btn btn-success">Añadido <i class="bi bi-cart-check-fill"></i></button>` : `<button id="cart-btn-${producto.id}" onclick="addToCart('${producto.id}')" class="btn comprar-btn">Comprar <i class="bi bi-cart-plus"></i></button>`}
                 </div>
             </div>
             ${producto.stock < 5 ? `<p style="color:red" class="stock text-center mt-3"> ¡Ultimas unidades! </p>` : ``}
